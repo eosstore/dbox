@@ -1,5 +1,3 @@
-# dbox
-# dbox
 # 柚子铺对接文档
 柚子铺针对dapp有两种对接文档:一种是专用链方案，另一种是大账户方案
 
@@ -57,15 +55,13 @@ cleos -u https://espnode.dbox.link/
 2） 如果有token合约，可以告诉我们token合约的账号，提供给我们token合约的abi文件和wasm文件；我方人员会在后台添加账号。账号创建好之后，就可以发行token了
 
 
-- 相关参数
-专用网 api地址：https://espnode.dbox.link/
-
-scatter开发文档：https://get-scatter.com/docs/getting-started 
-
-安卓钱包柚子铺下载地址：https://www.dbox.link/android/download/latest.apk
+### 相关参数
+- 专用网 api地址：https://espnode.dbox.link/
+- scatter开发文档：https://get-scatter.com/docs/getting-started 
+- 安卓钱包柚子铺下载地址：https://www.dbox.link/android/download/latest.apk
 
 
-技术架构
+### 技术架构
 ![图片](dbox-t.png)
 
 ## 二、大账户方案
