@@ -66,7 +66,7 @@ scatter开发文档：https://get-scatter.com/docs/getting-started
 
 
 技术架构
-![图片](dbox.t)
+![图片](dbox-t.png)
 
 ## 二、大账户方案
 ### 说明
