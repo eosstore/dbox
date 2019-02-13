@@ -73,6 +73,13 @@ cleos -u https://espnode.dbox.link/
 
 ### 柚子铺运行
 在柚子铺运行的DAPP，会自动在全局注入 eosStore 对象。eosStore对象内容
+
+名称 |类型 |说明
+----|-----|-----
+proxyAccount| string |代理账户对象
+proxyAccountMemoPrefix| string |代理账户交易备注前缀
+get_currency_balance| function |获取私链账户余额
+
 采用大帐号方案运行的DAPP，通过scatter协议操作的依然是使用的私链账户，但是在涉及签名的地方，需要使用代理账户。 示例代码：
 
 ```
