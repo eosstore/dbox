@@ -76,7 +76,7 @@ cleos -u https://espnode.dbox.link/
 
 名称 |类型 |说明
 ----|-----|-----
-proxyAccount| string |代理账户对象
+proxyAccount| object |代理账户对象
 proxyAccountMemoPrefix| string |代理账户交易备注前缀
 get_currency_balance| function |获取私链账户余额
 
