@@ -70,7 +70,7 @@ cleos -u https://espnode.dbox.link/
 
 
 ### 技术架构
-![图片](dbox-11.jpg)
+![图片](dbox-1.jpg)
 
 ## 二、大账户方案
 ### 说明
