@@ -89,7 +89,7 @@ proxyAccountMemoPrefix| string |代理账户交易备注前缀
 get_currency_balance| function |获取私链账户余额
 
 ### 技术架构
-![图片](dbox-21.jpg)
+![图片](dbox-2.jpg)
 
 
 采用大帐号方案运行的DAPP，通过scatter协议操作的依然是使用的私链账户，但是在涉及签名的地方，需要使用代理账户。 示例代码：
