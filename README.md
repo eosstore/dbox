@@ -246,3 +246,28 @@ export default {
 
 }
 ```
+
+## 三、分享分佣接入说明
+### 说明
+分享分佣是指给每个DAPP单独设置一个分享分佣的活动，每个用户对于一个活动都有一个专属的邀请码，通过上下级关系建立用户的结构，每个活动会自动生成一个EOS Account，DAPP方需要在用户发生交易的时候将反拥的部分转回该帐号，并且备注玩家的帐号。
+
+### 合约要求
+转账接收者必须是DAPP分享分佣活动自动生成的帐号，memo参数必须为玩家EOS帐号。
+
+### 柚子铺运行
+在柚子铺运行的DAPP，会自动在全局注入 eosStore 对象。eosStore对象内容
+		
+名称 |	类型|	说明
+----|-----|-----
+shareTaskUserCode	|string	| 当前玩家的分享码
+shareTaskUserInviter|	string	| 当前玩家的上级分享码
+shareTaskUserJoinAt |	datetime| 当前玩家加入分享的时间
+shareTaskSetInviter	| function| 设置当前玩家的上级，返回值：Promise对象
+
+
+
+DAPP分享码设置方案有2种，DAPP方可以根据情况选择：
+  
+- 自己开发设置分享码的界面，自己开发分享码时需要判断上级是否等于null，等于null才弹出设置界面。
+  
+- 直接载入js https://www.dbox.link/dapp_set_inviter/loader.js，会自动在dom加载后弹出输入框。
